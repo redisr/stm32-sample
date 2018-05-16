@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Project>
-<ProjectName>C:\Users\redis\Untitled Folder 1\sample\\sample</ProjectName>
+<ProjectName>/home/redir/STM32_projects/stm32-sample/\sample</ProjectName>
 <ProjectNature>C</ProjectNature> 
-<CMSIS>Drivers\CMSIS</CMSIS>
-<HAL_Driver>C:\Users\redis\STM32Cube\Repository\STM32Cube_FW_F3_V1.9.0\Drivers\CMSIS</HAL_Driver>
+<CMSIS>Drivers/CMSIS</CMSIS>
+<HAL_Driver>/home/redir/STM32Cube/Repository//STM32Cube_FW_F3_V1.9.0/Drivers/CMSIS</HAL_Driver>
 <Toolchain>Makefile</Toolchain>
 <Version>0</Version>
 
@@ -32,7 +32,7 @@
     <usedDebug>true</usedDebug>
     	<debugprobe>swd</debugprobe>
     <optimization></optimization>
-    <icfloc>1</icfloc>
+    <icfloc>0</icfloc>
     <Adefines>
         <define></define>
     </Adefines>   
@@ -57,10 +57,10 @@
     
 	<Cincludes>
 	   <include>Inc</include>
-	   <include>Drivers\STM32F3xx_HAL_Driver\Inc</include>
-	   <include>Drivers\STM32F3xx_HAL_Driver\Inc\Legacy</include>
-	   <include>Drivers\CMSIS\Device\ST\STM32F3xx\Include</include>
-	   <include>Drivers\CMSIS\Include</include>
+	   <include>Drivers/STM32F3xx_HAL_Driver/Inc</include>
+	   <include>Drivers/STM32F3xx_HAL_Driver/Inc/Legacy</include>
+	   <include>Drivers/CMSIS/Device/ST/STM32F3xx/Include</include>
+	   <include>Drivers/CMSIS/Include</include>
 
     </Cincludes>
       </config>
@@ -127,7 +127,7 @@
 		    <group>
 		    	<name>CMSIS</name>
 							<file>
-								<name>\Src/system_stm32f3xx.c</name>
+								<name>/Src/system_stm32f3xx.c</name>
 							</file>
 		    	</group>
 	  </group>   
@@ -136,19 +136,46 @@
 	    <group>
 	      <name>User</name>  
                                 <file>
-                                 <name>Src\main.c</name>
+                                 <name>Src/main.c</name>
                                 </file>
 
                                 <file>
-                                 <name>Src\stm32f3xx_it.c</name>
+                                 <name>Src/stm32f3xx_it.c</name>
                                 </file>
 
                                 <file>
-                                 <name>Src\stm32f3xx_hal_msp.c</name>
+                                 <name>Src/stm32f3xx_hal_msp.c</name>
                                 </file>
 
 
 
+    <group>
+        <name>Src</name>
+                    <group>
+                    <name>main.c</name>
+                                    <file>
+                                            <name>Src/main.c</name>
+                                    </file>
+                    </group>
+    </group>
+    <group>
+        <name>Src</name>
+                    <group>
+                    <name>stm32f3xx_hal_msp.c</name>
+                                    <file>
+                                            <name>Src/stm32f3xx_hal_msp.c</name>
+                                    </file>
+                    </group>
+    </group>
+    <group>
+        <name>Src</name>
+                    <group>
+                    <name>stm32f3xx_it.c</name>
+                                    <file>
+                                            <name>Src/stm32f3xx_it.c</name>
+                                    </file>
+                    </group>
+    </group>
 
 </group> 
   </group>

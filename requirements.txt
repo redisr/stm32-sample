@@ -1,0 +1,10 @@
+Install OpenOCD from source with stlink support
+# ./configure --enable-stlink
+# make
+# sudo make install
+
+Install arm toolchain
+A preconpiled version can be found at https://developer.arm.com/open-source/gnu-toolchain/gnu-rm/downloads
+Add toolchain/bin to PATH variable
+
+Download STM32CubeMX and run install file for linux
